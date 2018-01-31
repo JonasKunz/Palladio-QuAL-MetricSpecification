@@ -13,6 +13,7 @@ import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.palladiosimulator.metricspec.BaseMetricDescription;
 import org.palladiosimulator.metricspec.MetricSetDescription;
 import org.palladiosimulator.metricspec.NumericalBaseMetricDescription;
+import org.palladiosimulator.metricspec.TextualBaseMetricDescription;
 
 /**
  * Constant metric descriptions, commonly used by ProbeFramework.
@@ -118,7 +119,7 @@ public final class MetricDescriptionConstants {
      * Specifies a (point in time, execution result)-tuple, i.e., time of getting the execution
      * result plus the execution result itself.
      */
-    public final static MetricSetDescription EXECUTION_RESULT_METRIC_TUPLE;
+    public final static MetricSetDescription EXECUTION_RESULT_OVER_TIME_METRIC;
 
     /** Scalability range without violating SLOs, e.g., the system scales up to 1,000 users. */
     public final static BaseMetricDescription SCALABILITY_RANGE;
@@ -371,7 +372,7 @@ public final class MetricDescriptionConstants {
                 .getEObject("_M_jZoespEeOpcPDUs0BVCg");
 
         EXECUTION_RESULT_METRIC = (BaseMetricDescription) resource.getEObject("_7Is3ss7rEeOX_4BzImuHbA");
-        EXECUTION_RESULT_METRIC_TUPLE = (MetricSetDescription) resource.getEObject("_3aoZYeJFEeO6l86uYUhhyw");
+        EXECUTION_RESULT_OVER_TIME_METRIC = (MetricSetDescription) resource.getEObject("_3aoZYeJFEeO6l86uYUhhyw");
 
         SCALABILITY_RANGE = (BaseMetricDescription) resource.getEObject("_gNxNEtBxEeONzY86HEL4JQ");
         SLOPE = (BaseMetricDescription) resource.getEObject("_Nz_HctBzEeONzY86HEL4JQ");
